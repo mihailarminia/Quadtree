@@ -1,0 +1,41 @@
+Am folosit pe langa structura QuadTreeNode inca 2 structuri : RGB in care retin valorile pentru red green si blue, Node cu care voi construi
+arborele cuaternar.
+
+Functia "add_node" returneaza un pointer pentru un nod nou din arbore, ii setez legaturile catre NULL si celelalte informatii le completez
+pe parcurs
+
+Functia "build_tree" construieste arborele cu factorul de compresie astfel : fac media red, green, blue parcurgand submatricea de pixeli
+cu coltul in (L, C) si de lungime "latura". Daca "mean" este mai mare decat pragul impus si mai am ce imparti, ma duc recursiv in cele 4 matrici mai mici, de fiecare data returnand pointerul nodul abia construit.
+
+Functia "build_tree2" construieste arborele plecand de la vectorul de structuri de tip QuadTreeNode.
+
+Functia "build_matrix" construieste matricea de pixeli pornind de la vectorul de structuri.
+
+Functia "build_matrix2" construieste matricea de pixeli pornind de la vectorul de structuri si difera de cea anterioara prin faptul ca
+nu initializeaza o valoare, ci adauga la valoarea curenta noua informatie.
+
+Functia "BFS" creeaza vectorul de structuri de tip QuadTreeNode facand o parcurgere in latime pornind din "root".
+
+Functia "h" oglindeste imaginea pe orizontal.
+
+Functia "v" oglindeste imaginea pe vertical.
+
+Functia "modify_horizontal" reface legaturile ca in exemplul din cerinta.
+
+Functia "modify_vertical" reface legaturile ca in exemplul din cerinta.
+
+Functia "free_quadtree" elibereaza memoria alocata pentru arborele cuaternar.
+
+Functia "nr_noduri" numara nodurile din arborele cuaternar.
+
+Functia "nr_frunze" numara frunzele din arborele cuaternar.
+
+Functia "task01" rezolva cerinta 1 folosind subprogramele definite anterior.
+
+Functia "task02" rezolva cerinta 2 folosind subprogramele definite anterior.
+
+Functia "task03" rezolva cerinta 3 folosind subprogramele definite anterior.
+
+Functia "bonus" rezolvat cerinta bonus folosind subprogramele definite anterior.
+
+
